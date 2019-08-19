@@ -1,6 +1,6 @@
 // 1. Copy and paste your prototype in here and refactor into class syntax.
 class CuboidMaker {
-  constructor(length, width = length, height = length) {
+  constructor(length, width, height) {
     this.length = length;
     this.width = width;
     this.height = height;
@@ -27,6 +27,10 @@ console.log(cuboid.surfaceArea()); // 130
 // properties from CuboidMaker.  Test your work by logging out your volume and surface area.
 
 class CubeMaker extends CuboidMaker {
+  constructor(length) {
+    super(length, length, length);
+  }
+
   volume() {
     return this.length ** 3;
   }
