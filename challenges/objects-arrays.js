@@ -252,7 +252,7 @@ console.log(lowerPopulation);
  population from all the zoos using the .reduce() method.
 
  */
-const populationTotal = 0;
+const populationTotal = zooAnimals.reduce((accumulator, animal) => accumulator + animal.population, 0);
 console.log(populationTotal);
 
 
