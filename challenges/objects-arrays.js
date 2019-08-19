@@ -243,7 +243,7 @@ console.log(lowerCase);
  population less than 5.
 
  */
-const lowerPopulation = [];
+const lowerPopulation = zooAnimals.filter((animal) => animal.population < 5);
 console.log(lowerPopulation);
 
 /* Request 4: .reduce()
